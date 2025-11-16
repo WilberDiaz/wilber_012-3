@@ -1,0 +1,65 @@
+/* ===================== ESTILO GENERAL ===================== */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.header-bg {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.header-image {
+    background-image: url("https://t4.ftcdn.net/jpg/02/82/00/75/360_F_282007508_wdCUP7hUMNK1Cuzj7XmOcFmzyzJ0Nnp9.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* ===================== TARJETAS ===================== */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* TITULO Y DESCRIPCIÓN */
+.card-title {
+    height: 48px;
+    overflow: hidden;
+}
+
+.card-text {
+    height: 22px;
+    overflow: hidden;
+}
+
+/* ===================== CARRITO ===================== */
+#cartCount {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* SPINNER */
+#loadingSpinner {
+    display: block;
+}
